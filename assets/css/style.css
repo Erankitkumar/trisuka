@@ -1,9 +1,147 @@
 :root{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 65.4;
+
+    /* colors used */
+    --trsk_primary: #93B5C6;
+    --trsk_secondary: #C9CCD5;
+    --trsk_tertiary: #E4D8DC;
+    --trsk_general: #FFE3E3;
 }
 
-*{
+*,ul,ol,nav,div,section,li,a,p,b,i,span{
     margin: 0;
     padding: 0;
+}
+
+/* styles for navbar.php are here */
+.top_nav{
+    background-color: var(--trsk_primary);
+
+}
+.nav_wrapper{
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.brnd_logo{
+    width: 40%;
+    padding: .5rem;
+}
+#brnd_logo_img{
+    width: 120px;
+    height: 70px;
+}
+
+.trska_top_nav{
+    width: 70%;
+}
+.trska_top_nav ul{
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.trska_top_nav ul{
+    font-size: .9rem;
+    font-weight: 500;
+}
+.trska_top_nav ul li a{
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    transition: .1s all ease;
+}
+.trska_top_nav ul li a:hover{
+    color: chocolate;
+    font-size: 1rem;
+    transition: .1s all ease;
+}
+
+
+/* styles for index.php starts here */
+
+/* styles for welcome section */
+
+.fltr_layer{
+    background-color: var(--trsk_secondary);
+    height: 90vh;
+}
+
+.trska_bg{
+    background-image: url(../img/bg_image.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+.trska_bg .welcome_content{
+    width: 50%;
+    padding-top: 25vh;
+    line-height: 2rem;
+}
+
+/* styles for about section */
+.content_wrapper{
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.ft_image_container{
+    width: 40%;
+}
+
+#ft_image{
+    width: 130rem;
+}
+
+.abt_content{
+    width: 50%;
+}
+
+/* styles for footer section */
+.footer_wrapper{
+    width: 95%;
+    margin:0 auto;
+}
+.upper_footer_content{
+    
+}
+
+
+#footer_logo{
+    width: 100px;
+    height: 60px;
+    margin-bottom: 1.4rem;
+} 
+
+.social_links ul{
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 2rem;
+    margin-top: 1.4rem;
+}
+
+
+.lower_footer_content{
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.lower_footer_content .footer_links{
+    width: 35%;
+}
+.lower_footer_content .footer_links ul{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.lower_footer_content .footer_links ul li a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
 }

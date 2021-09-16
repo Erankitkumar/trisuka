@@ -43,7 +43,7 @@
 main{
     display: flex;
     flex-direction: row;
-    
+    overflow: hidden;
     height: 82.9vh;
     background-color: var(--trs_ad_secondary);
 }
@@ -51,6 +51,9 @@ main{
 #side_bar{
     width: 20%;
     height: 82.9vh;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-right: 1px solid white;
 }
 #side_bar *{
     background-color: transparent;
@@ -61,5 +64,17 @@ main{
 #content{
     width: 80%;
     height: 82.9vh;
-    
+    overflow-y: auto;
+}
+
+/* styles for show blog section */
+
+.show-blogs{
+    color: rgb(230, 228, 228);
+}
+
+.show-blogs table{
+    width: 100%;
+    table-layout: fixed;
+    border: 1px solid black;
 }

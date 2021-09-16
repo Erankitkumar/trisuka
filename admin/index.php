@@ -48,7 +48,7 @@
 
 
 
-    <main class="container-fluid px-4 py-2">
+    <main class="container-fluid px-0 py-2">
 
         <div id="side_bar" class="accordion" id="parentAccordion">
             <div class="accordion-item">
@@ -84,6 +84,20 @@
 
         <div id="content" class="target">
 
+
+            <?php
+                
+            ?>
+
+
+
+
+
+
+         
+
+
+
         </div>
 
 
@@ -103,6 +117,8 @@
 
 
     <!-- scripts libraries are here -->
+    <script src="../assets/js/jquery.min.js"></script>
+
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <!-- custom scripts are here -->
     <script src="./assets/js/script.js"></script>

@@ -74,13 +74,14 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    box-sizing: border-box;
+    
     
 }
 .trska_bg .welcome_content{
     width: 50%;
     padding-top: 25vh;
     line-height: 2rem;
+
 }
 
 /* styles for about section */
@@ -104,13 +105,22 @@
 
 /* styles for footer section */
 .footer_wrapper{
-    width: 95%;
-    margin:0 auto;
+    width: 100%;
+    padding:0 2.5%;
+    background-color: var(--trsk_primary);
 }
 .upper_footer_content{
     
 }
-
+.upper_footer_content>div{
+    padding: 3rem;
+}
+.brnd_box_footer>div{
+    text-align: center;
+}
+.brnd_box_footer>p{
+    text-align: justify;
+}
 
 #footer_logo{
     width: 100px;

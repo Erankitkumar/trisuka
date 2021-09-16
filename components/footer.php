@@ -2,7 +2,7 @@
 
     <footer class="footer_wrapper">
         <div class="upper_footer_content row">
-            <div class="col-md-4">
+            <div class="col-md-4 brnd_box_footer">
                 <div>
                     <img id="footer_logo" class="img-fluid" src="./assets/img/trisuka_logo.png" alt="footer trisuka logo" />
                 </div>
@@ -27,7 +27,10 @@
             </div>
 
             <div class="col-md-4">
-
+                <h3>Services</h3>
+                <p><a href="#">Tax & Accounting</a></p>
+                <p><a href="#">Bookkeeping</a></p>
+                <p><a href="#">Reporting & Analysis</a></p>
             </div>
         </div>
         <hr />

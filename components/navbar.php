@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <!-- include libraries here -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -21,7 +21,7 @@
 
     <!-- navbar is here -->
 
-    <nav class="navbar navbar-expand-lg navbar-black bg-black fixed-top nav_container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top nav_container">
         <div class="container ">
             <a class="navbar-brand" href="#">
                 <img src="./assets/img/trisuka_logo.png" alt="company logo" width="80" height="50">

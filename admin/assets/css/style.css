@@ -1,0 +1,65 @@
+:root{
+    --trs_ad_primary: #151515;
+    --trs_ad_secondary: #301B3F;
+    --trs_ad_tertiary: #3C415C;
+    --trs_ad_general: #B4A5A5;
+}
+
+
+/* navbar styles are here */
+
+#logo{
+    width: 30px;
+    height: 30px;
+}
+
+.header_wrapper{
+    background-color: var(--trs_ad_tertiary);
+    
+}
+.sec_nav_container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+}
+
+#search_input{
+    width: 20rem;
+    height: 2.2rem;
+    
+}
+#search_btn{
+    width: 8rem;
+    height: 2.2rem;
+    padding: 0 !important;
+}
+
+/* main content are styled here */
+
+main{
+    display: flex;
+    flex-direction: row;
+    
+    height: 82.9vh;
+    background-color: var(--trs_ad_secondary);
+}
+
+#side_bar{
+    width: 20%;
+    height: 82.9vh;
+}
+#side_bar *{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+#content{
+    width: 80%;
+    height: 82.9vh;
+    
+}

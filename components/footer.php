@@ -9,25 +9,25 @@
                 <p class="para">Trisuka is a online based platform to simplify legal and business-related matters.</p>
                 <div class="social_links">
                     <ul class="d-flex">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i style="color: rgb(39, 39, 253);" class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i style="color: rgb(171, 3, 248);" class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i style="color: rgb(67, 67, 255);" class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i style="color: red;" class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i style="color: rgb(17, 17, 116);" class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <h3>Contact Now</h3>
-                <p><span>Phone:</span> +918589839849</p>
-                <p><span>Email:</span> +918589839849</p>
-                <p><span>Registered Address:</span> +918589839849</p>
-                <p><span>Branch Address:</span> +918589839849</p>
+            <div class="col-md-4 second">
+                <h3 class="mb-3">Contact Now</h3>
+                <p class="mb-1"><a href="tel:+918589839849"><span><i class="fas fa-phone-square-alt"></i> &nbsp;Phone:</span> +918589839849</a></p>
+                <p class="mb-1"><a href="mailto:info@trisuka.ltd"><span><i class="far fa-envelope"></i> &nbsp;Email:</span> info@trisuka.ltd</a></p>
+                <p class="mb-1"><span>Registered Address:</span> 204 Suryoday Apartment dwarka sector 12 pocket 8 110075 Landmark Radisson blu hotel</p>
+                <p class="mb-1"><span>Branch Address:</span> 403 Himalaya Height Bhakti Park Mumbai 400037</p>
             </div>
 
-            <div class="col-md-4">
-                <h3>Services</h3>
+            <div class="col-md-4 third">
+                <h3 class="mb-3">Services</h3>
                 <p><a href="#">Tax & Accounting</a></p>
                 <p><a href="#">Bookkeeping</a></p>
                 <p><a href="#">Reporting & Analysis</a></p>

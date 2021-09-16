@@ -3,10 +3,10 @@
     font-size: 65.4;
 
     /* colors used */
-    --trsk_primary: #93B5C6;
-    --trsk_secondary: #C9CCD5;
-    --trsk_tertiary: #E4D8DC;
-    --trsk_general: #FFE3E3;
+    --trsk_primary: #121013;
+    --trsk_secondary: #4D375D;
+    --trsk_tertiary: #EB596E;
+    --trsk_general: #ffec6d;
 }
 
 *,ul,ol,nav,div,section,li,a,p,b,i,span{
@@ -15,73 +15,183 @@
 }
 
 /* styles for navbar.php are here */
-.top_nav{
-    background-color: var(--trsk_primary);
-
-}
-.nav_wrapper{
-    align-items: center;
-    justify-content: space-between;
-    
+.nav_links_container{
+    margin-left: 330px;
 }
 
-.brnd_logo{
-    width: 40%;
-    padding: .5rem;
+@media (max-width:768px){
+    .nav_links_container{
+        margin-left: 0px;
+    }
 }
-#brnd_logo_img{
-    width: 120px;
-    height: 70px;
+.nav_links_container li a{
+    color: rgb(201, 198, 198) !important;
+    transition: .3s all ease;
+}
+.nav_links_container li a:hover{
+    color:chocolate !important;
+    transform: scaleX(1.155);
 }
 
-.trska_top_nav{
-    width: 70%;
-}
-.trska_top_nav ul{
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.trska_top_nav ul{
-    font-size: .9rem;
-    font-weight: 500;
-}
-.trska_top_nav ul li a{
-    color: rgb(32, 32, 32);
-    text-decoration: none;
-    transition: .1s all ease;
-}
-.trska_top_nav ul li a:hover{
-    color: chocolate;
-    font-size: 1rem;
-    transition: .1s all ease;
-}
+
+/* end of navbar.php styles */
 
 
 /* styles for index.php starts here */
 
-/* styles for welcome section */
+/* slider styles */
 
-.fltr_layer{
-    background-color: var(--trsk_secondary);
-    height: 90vh;
-}
-
-.trska_bg{
-    background-image: url(../img/bg_image.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg_slider.jpg);
+    background-image: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .left-slide {
     height: 100%;
-    
+    width: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+  }
+  
+  .left-slide > div {
+    height: 100%;
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    margin-left: -34px;
+  }
+  .left-slide button{
+      color: rgb(190, 190, 190);
+      background-color: rgb(247, 137, 59);
+      width: 12rem;
+      margin-left: -125px;
+  }
+  
+  .right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    transition: transform .5s ease-in-out;
+
+
+  }
+  
+  .right-slide div {
+    background-color: rgba(70, 43, 80, 0.671);
+    height: 100%;
+    width: 100%;
+  }
+
+  .right-slide div img{
+      width: 30rem;
+      height: auto;
+      margin-top: 12rem;
+      margin-left: 10rem;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  
+  .slider-container .action-buttons button {
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .slider-container .action-buttons .down-button {
+    transform: translateY(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .slider-container .action-buttons .up-button {
+    transform: translateX(-100%);
+    border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+  }
+
+
+/* mybox styles are here */
+.mybox{
+    width: auto;
+    height: 80vh;
+}
+
+/* parallax about section styles are here */
+
+.parallax{
+    background: url('../img/about_bg.jpg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.parallax-inner{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#v_image{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: -220px;
+    margin-left: 310px;
     
 }
-.trska_bg .welcome_content{
-    width: 50%;
-    padding-top: 25vh;
-    line-height: 2rem;
 
+.v_btn{
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+    
+}
+.v_btn_container{
+    margin-left: 410px;
+    margin-top: -144px;
+}
+
+.abt_content h2{
+    font-size: 2.2rem;
+}
+
+.abt_content h2 span{
+    color: chocolate;
+}
+
+.abt_content .desc,.desc2{
+    text-shadow: 1px 1px 1px black;
+    text-align: justify;
 }
 
 /* styles for about section */
@@ -96,17 +206,62 @@
 }
 
 #ft_image{
-    width: 130rem;
+    width: 100rem;
 }
 
 .abt_content{
     width: 50%;
 }
 
+
+
+/* featured blog section is styled here */
+
+.row>div{
+    width: 1fr;
+}
+
+.feat_blogs h2{
+    font-size: 2.2rem;
+}
+.feat_blogs h2 span{
+    color: chocolate;
+}
+
+.card .card-body img{
+    width: 100%;
+    height: 15rem;
+}
+.card .card-body h5{
+    font-size: 1.2rem;
+}
+.card .card-body p{
+    color: rgb(66, 65, 65);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* styles for footer section */
 .footer_wrapper{
     width: 100%;
     padding:0 2.5%;
+    color: rgb(218, 216, 216);
     background-color: var(--trsk_primary);
 }
 .upper_footer_content{
@@ -115,6 +270,9 @@
 .upper_footer_content>div{
     padding: 3rem;
 }
+
+/* first footer cards' style */
+
 .brnd_box_footer>div{
     text-align: center;
 }
@@ -131,10 +289,59 @@
 .social_links ul{
     justify-content: space-between;
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 1.4rem;
 }
+.social_links ul li{
+    background-color: rgb(228, 225, 225);
+    width: 40px;
+    height: 40px;
+    padding-top: 1px;
+    border-radius: 50%;
+    transition: .3s all ease;
+    
+}
+.social_links ul li:hover{
+    background-color: rgb(182, 179, 179);
+    transform: scale(1.2);
+}
 
+/* style for first card ends here */
+
+/* style for second footer card */
+
+.second{
+    text-align: left;
+}
+.second h3{
+    color: chocolate;
+}
+.second p span{
+    color: var(--trsk_general);
+}
+.second p a{
+    text-decoration: none;
+    color:rgb(218, 216, 216);
+}
+
+/* style for second card ends here */
+
+/* style for third footer card starts here */
+.third h3{
+    color: chocolate;
+}
+.third p{
+    margin-bottom: 15px;
+    transition: .3s all ease;
+}
+.third p:hover{
+    color: var(--trsk_tertiary);
+    transform: scaleX(1.1);
+}
+.third p a{
+    color:rgb(218, 216, 216);
+    text-decoration: none;
+}
 
 .lower_footer_content{
     justify-content: space-between;
@@ -153,5 +360,5 @@
 }
 .lower_footer_content .footer_links ul li a{
     text-decoration: none;
-    color: rgb(32, 32, 32);
+    color: rgb(109, 109, 109);
 }

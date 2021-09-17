@@ -1,3 +1,10 @@
+<?php
+    $data = $_POST;
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,9 +12,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <!-- libraries are here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <title>Trisuka | Admin Panel</title>
     <!-- custom css are here -->
@@ -53,15 +62,15 @@
         <div id="side_bar" class="accordion" id="parentAccordion">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button id="btn_dash" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         Dashboard
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#parentAccordion">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><a href="#">Dashboard</a></li>
-                        </ul>
+                    <div class="accordion-body" style="line-height: 2rem;">
+                        
+                    <button id="btn_dash">Dashboard</button>
+                        
                     </div>
                 </div>
             </div>
@@ -72,11 +81,9 @@
                     </button>
                 </h2>
                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#parentAccordion">
-                    <div class="accordion-body">
-                        <ul>
-                            <li><a href="#">All Blogs</a></li>
-                            <li><a href="#">Add Blogs</a></li>
-                        </ul>
+                    <div class="accordion-body" style="line-height: 2rem;">
+                        <button id="btn_all_blog">All Blog</button>
+                        <button id="btn_add_blog">Add Blog</button>
                     </div>
                 </div>
             </div>
@@ -84,10 +91,6 @@
 
         <div id="content" class="target">
 
-
-            <?php
-                
-            ?>
 
 
 
@@ -117,7 +120,6 @@
 
 
     <!-- scripts libraries are here -->
-    <script src="../assets/js/jquery.min.js"></script>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <!-- custom scripts are here -->

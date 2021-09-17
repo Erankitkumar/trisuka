@@ -9,11 +9,8 @@ include './components/navbar.php';
 <div class="slider-container">
     <div class="left-slide">
         <div style="background-color: #4D375D">
-            <h1>
-                We Help Clients <br> Solve Complex <br>Problems
-            </h1>
-            <p>We are committed to add value and optimize <br> the benefits according to clients</p>
-            <button class="btn btn-warning mt-4">Contact Us</button>
+            <div class="feat_logo"><img class="img-fluid" src="./assets/img/trisuka_logo.png" alt=""></div>
+            <strong class="mt-3">We Help Clients Solve Complex Problems</strong>
         </div>
         <div style="background-color: #7689a8">
             <h1>We Help Clients <br> Solve Complex <br>Problems</h1>
@@ -57,15 +54,36 @@ include './components/navbar.php';
             <i class="fas fa-arrow-up"></i>
         </button>
     </div>
+    <div class="down_btn">
+    <div class="btn_con">
+        <i class="fas fa-chevron-down"></i>
+    </div>
 </div>
+</div>
+
 
 
 <!-- slider ends here -->
 
-<section class="mybox">
 
+<?php
+    include './components/header.php';
+?>
+
+
+
+<!-- about-intro section is here -->
+<section class="abt_intro">
+    <div class="h_con">
+        <h2>ABOUT</h2>
+        <strong class="tr">TRISUKA</strong>
+    </div>
+    <div class="vid_con">
+        <div><a href="#"><i class="fas fa-play"></i></a></div>
+        <img class="img-fluid" src="./assets/img/video-image.jpg" alt="">
+        <span id="filter_layer"></span>
+    </div>
 </section>
-
 <!-- about section starts here -->
 
 

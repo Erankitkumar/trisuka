@@ -1,6 +1,6 @@
 :root{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 65.4;
+
 
     /* colors used */
     --trsk_primary: #121013;
@@ -14,8 +14,14 @@
     padding: 0;
 }
 
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* styles for navbar.php are here */
 .nav_links_container{
+    margin-right: 0;
     margin-left: 330px;
 }
 
@@ -44,7 +50,7 @@
 .slider-container {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-image: url(../img/bg_slider.jpg);
     background-image: no-repeat;
@@ -60,7 +66,18 @@
     left: 0;
     transition: transform .5s ease-in-out;
   }
-  
+  .feat_logo img{
+      width: 240px;
+      padding: 15px;
+      transition: .7s all ease-in-out;
+  }
+
+  .feat_logo img:hover{
+      box-shadow: 2px 2px 5px rgba(51, 50, 50, 0.856);
+      transform: scale(1.1);
+  }
+
+
   .left-slide > div {
     height: 100%;
      width: 100%;
@@ -69,6 +86,10 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+  }
+  .left-slide > div > strong{
+      font-size: x-large;
+      text-shadow: 1px 2px 1px black;
   }
   
   .left-slide h1 {
@@ -141,11 +162,122 @@
      border-bottom-right-radius: 5px;
   }
 
+/* down arrow container style */
+.down_btn{
+    box-sizing: border-box;
+    background-color: rgba(66, 65, 65, 0.075);
+    height: 8rem;
+    position: relative;
+    top: 497px;
+    transition: .3s all ease;
+    cursor: pointer;
+}
+.down_btn:hover{
+    background-color: rgba(66, 65, 65, 0.219);
+    
+}
+.down_btn .btn_con{
+    width: fit-content;
+    height: auto;
+    position: relative;
+    margin:auto;
+    top: 43px;
+    
+}
 
-/* mybox styles are here */
-.mybox{
-    width: auto;
-    height: 80vh;
+.down_btn .btn_con i{
+    font-size: 3rem;
+    color: white;
+}
+
+
+/* abt_intro styles are here */
+.abt_intro{
+    background-color: rgb(134, 133, 133);
+    padding: 1rem 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.abt_intro .h_con{
+    padding: 1rem 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 5px;
+}
+.abt_intro .h_con h2{
+    position: relative;
+    left: -10px;
+}
+.abt_intro .h_con .tr{
+    color: chocolate;
+    font-size: 4rem;
+    position: relative;
+    right: -10px;
+}
+.abt_intro .vid_con img{
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+    top: -40px;
+}
+
+/* animations */
+.slidin_left{
+    position: relative;
+    animation-name: slidin_left;
+    animation-duration: 3s;
+}
+@keyframes slidin_left {
+    from {
+        opacity: 0;
+        right: 200px;
+    }
+    to {
+        opacity: 1;
+        right: 0px;
+    }
+}
+.slidin_right{
+    position: relative;
+    animation-name: left_slide_in;
+    animation-duration: 3s;
+}
+@keyframes left_slide_in {
+    from {
+        opacity: 0;
+        left: 200px;
+        
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+        
+    }
+}
+.abt_intro .vid_con div{
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: rgb(223, 219, 219);
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 156px;
+    left: 119px;
+    z-index: 4;
+}
+.abt_intro .vid_con div i{
+    padding-left: 9px;
+    font-size: 3rem;
+    color: white;
+    z-index: 5;
+}
+#filter_layer{
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background-color: rgba(250, 12, 12, 0.493);
+    z-index: 3;
 }
 
 /* parallax about section styles are here */

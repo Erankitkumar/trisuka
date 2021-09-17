@@ -30,3 +30,35 @@ const changeSlide = (direction) => {
     slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
     slideLeft.style.transform = `translateY(${activeSlideIndex * sliderHeight}px)`
 }
+
+$(document).ready(function(){
+
+    
+
+    $('.btn_con').click(function(){
+        console.log('clicked');
+        window.scrollBy(0, 625);
+    });
+
+    $(window).scroll(function(){
+        if($(document).scrollTop() == 625 || $(document).scrollTop() > 625){
+          $('#trsk_top_nav').css({'position': 'fixed', 'top':'0', 'left':'0','right':'0','z-index':'100'});
+          $('.abt_intro').css({'margin-top':'76px'});
+        }else{
+          $('#trsk_top_nav').css({'position': ''});
+          $('.abt_intro').css({'margin-top':'0px'});
+        }
+
+        if($(document).scrollTop() >=300){
+            $('.vid_con').addClass('slidin_right');
+            $('.h_con').addClass('slidin_left');
+        }else if($(document).scrollTop() < 300){
+            $('.vid_con').removeClass('slidin_right');
+            $('.h_con').removeClass('slidin_left');
+        }
+        
+    });
+
+
+
+});

@@ -55,10 +55,10 @@ include './components/navbar.php';
         </button>
     </div>
     <div class="down_btn">
-    <div class="btn_con">
-        <i class="fas fa-chevron-down"></i>
+        <div class="btn_con">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </div>
-</div>
 </div>
 
 
@@ -67,7 +67,7 @@ include './components/navbar.php';
 
 
 <?php
-    include './components/header.php';
+include './components/header.php';
 ?>
 
 
@@ -75,13 +75,24 @@ include './components/navbar.php';
 <!-- about-intro section is here -->
 <section class="abt_intro">
     <div class="h_con">
-        <h2>ABOUT</h2>
-        <strong class="tr">TRISUKA</strong>
+        <div class="abt_content">
+            <h2 class="mb-4">ABOUT <span>TRISUKA</span></h2>
+            <p class="desc mb-3">
+                Trisuka is a online based platform to simplify legal and business-related matters. We are committed to helping startups and small business & other Business owners in solving legal compliance related to starting and running and full full there Govt. Compliance on time to the business. Our mission is to offer affordable, quick and automated professional services to clients. Through technology, we bring numerous government/ legal forms at one place and have simplified them to be fully understood by common man.
+            </p>
+            <p class="desc2">
+                Trisuka is currently has a network of 10+ professionals including experienced Chartered Accountants, Company Secretaries, Lawyers, Cost Accountants, Chartered Engineers and Bankers.
+            </p>
+        </div>
     </div>
     <div class="vid_con">
-        <div><a href="#"><i class="fas fa-play"></i></a></div>
-        <img class="img-fluid" src="./assets/img/video-image.jpg" alt="">
-        <span id="filter_layer"></span>
+        <div class="ft_image_container">
+            <img id="ft_image" class="img-fluid" src="./assets/img/trska_abt_image.png" alt="about image for trisuka" />
+            <div class="v_contain">
+                <img id="v_image" src="./assets/img/video-image.jpg" alt="video background image" />
+                <div class="v_btn_container"><a href="#" class="v_btn"><i class="fas fa-play"></i></a></div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- about section starts here -->
@@ -94,20 +105,8 @@ include './components/navbar.php';
             <!-- about section starts here -->
 
             <section class="content_wrapper my-5 d-flex align-items-center">
-                <div class="ft_image_container">
-                    <img id="ft_image" class="img-fluid" src="./assets/img/trska_abt_image.png" alt="about image for trisuka" />
-                    <img id="v_image" src="./assets/img/video-image.jpg" alt="video background image" />
-                    <div class="v_btn_container"><a href="#" class="v_btn"><i class="fas fa-play"></i></a></div>
-                </div>
-                <div class="abt_content">
-                    <h2 class="mb-4">ABOUT <span>TRISUKA</span></h2>
-                    <p class="desc mb-3">
-                        Trisuka is a online based platform to simplify legal and business-related matters. We are committed to helping startups and small business & other Business owners in solving legal compliance related to starting and running and full full there Govt. Compliance on time to the business. Our mission is to offer affordable, quick and automated professional services to clients. Through technology, we bring numerous government/ legal forms at one place and have simplified them to be fully understood by common man.
-                    </p>
-                    <p class="desc2">
-                        Trisuka is currently has a network of 10+ professionals including experienced Chartered Accountants, Company Secretaries, Lawyers, Cost Accountants, Chartered Engineers and Bankers.
-                    </p>
-                </div>
+
+
             </section>
         </div>
     </section>
